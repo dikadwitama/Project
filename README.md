@@ -1,29 +1,32 @@
-# Minimus
+# Project
 
+Berikut merupakan weather app sederhana menggunakan API dari openweather, menggunakan bootstrap angular dan menggunakan IDE visual studio code.
 
-![Minimus](https://miro.medium.com/max/3600/1*57lZyqXY85XSTYR3IuZKCg.png)
+## Program Initialization
 
+- Clone Code ke local directory
+- update / install angular ke versi yang terbaru ( npm install -g @angular/cli)
+    * notes : file node_modules tidak ada jika langung clone dari github
+- masuk ke direktori tempat menyimpan file (cd ../..)
+- Run 'ng serve -o' untuk mengenerate program                        
 
-## Tutorial Blog Posts On Medium
+## Running Program
 
+- Harus membuat akun email terlebih dahulu, jika sudah masukkan email dan        password
+- User dapat mencari cuaca hari ini (current) dan cuaca selama 5 hari            (forecast) dengan mengetikkan nama kota di kolom search dan klik add city
+- Kota yang berhasil dicari dan di add, akan tersimpan pada dashbord user
+- Jika ingin mengetahui detail cuaca, silahkan klik kota yang dipilih, akan      otomatis menampilkan current weather dan forecast weather
 
-- **Part I:** https://bit.ly/2IXMWdb
+## Error Solution
 
-- **Part II:** https://bit.ly/2P0c86Z
+- Jika user belum migrasi dari angular 2 maupun belum pernah update angular      yang terbaru dalam kurun waktu setahun, akan ada beberapa error seperti        salah satu contohnya adalah adanya peringatan error : (cannot find module      '@angular/http') yang diakibatkan cli angular terbaru memiliki syntax yang     berbeda. Sehingga harus dilakukan perubahannya dari  
+    syntax: import {Http} from '@angular/http';
+    Menjadi
+    syntax: import {HttpClientModule} from '@angular/common/http'; 
 
+## Further Information
 
-## Development server
+- Menggunakan API dari OpenWeather ('https://openweathermap.org/api') karena     link yang diberikan tidak dapat dibuka dan akhirnya terpilihlah API ini        karena selain banyak fitur gratis yang didapatkan dan adanya fitur forecast    secara gratis.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Further help
-
-To get more help just comment on Medium your question with the necessary references  
+  Best Regards,
+    Andhika Dwitama Putra"# Project" 
